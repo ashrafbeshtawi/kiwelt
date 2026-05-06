@@ -2,6 +2,7 @@
 
 import Nav from './Nav';
 import Footer from './Footer';
+import PageIcon from './PageIcon';
 import { useLang } from '@/lib/useLang';
 
 export default function FaqPage() {
@@ -12,10 +13,9 @@ export default function FaqPage() {
       <Nav lang={lang} setLang={setLang} t={t} current="faq" />
       <main className="page shell">
         <header className="page-head">
-          <div>
-            <div className="kicker">{f.kicker}</div>
-            <h1 className="h1">{f.title}</h1>
-          </div>
+          <PageIcon name="faq" />
+          <div className="kicker">{f.kicker}</div>
+          <h1 className="h1">{f.title}</h1>
         </header>
         <section className="faqs">
           {f.items.map((item, i) => (

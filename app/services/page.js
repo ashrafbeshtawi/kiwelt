@@ -1,7 +1,7 @@
 import ServicesPage from '@/components/ServicesPage';
 
 export const metadata = {
-  title: 'Leistungen — KI Welt',
+  title: 'Leistungen — Datenflow',
 };
 
 export default function Page() {

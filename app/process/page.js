@@ -1,7 +1,7 @@
 import ProcessPage from '@/components/ProcessPage';
 
 export const metadata = {
-  title: 'Vorgehen — KI Welt',
+  title: 'Vorgehen — Datenflow',
 };
 
 export default function Page() {

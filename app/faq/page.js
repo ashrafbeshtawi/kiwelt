@@ -1,7 +1,7 @@
 import FaqPage from '@/components/FaqPage';
 
 export const metadata = {
-  title: 'FAQ — KI Welt',
+  title: 'FAQ — Datenflow',
 };
 
 export default function Page() {

@@ -16,8 +16,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: 'KI Welt — Maßgeschneiderte KI für Unternehmen',
-  description: 'KI Welt — Custom AI for serious companies.',
+  title: 'Datenflow — Maßgeschneiderte KI für Unternehmen',
+  description: 'Datenflow — Custom AI for serious companies.',
 };
 
 export default function RootLayout({ children }) {

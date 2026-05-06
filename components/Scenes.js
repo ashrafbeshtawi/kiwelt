@@ -437,7 +437,7 @@ function CustomScene() {
           <circle cx="-214" cy="-164" r="4" fill="#22d3a5" />
           <circle cx="-198" cy="-164" r="4" fill="#1f3a30" />
           <circle cx="-182" cy="-164" r="4" fill="#1f3a30" />
-          <text x="0" y="-159" textAnchor="middle" fontFamily="JetBrains Mono" fontSize="13" fill="#9a9a9a" letterSpacing="1.5" fontWeight="500">acme.kiwelt.app</text>
+          <text x="0" y="-159" textAnchor="middle" fontFamily="JetBrains Mono" fontSize="13" fill="#9a9a9a" letterSpacing="1.5" fontWeight="500">acme.datenflow.app</text>
 
           <rect x="-230" y="-148" width="96" height="328" fill="#0a0a0a" />
           {['DASH','AUFTR.','KUNDEN','OPS','REPORTS','EINST.'].map((s, i) => (

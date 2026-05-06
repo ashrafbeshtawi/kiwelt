@@ -8,7 +8,7 @@ export default function Footer({ t }) {
         <span>{t.footer.copy}</span>
       </div>
       <div className="footer-right">
-        {t.footer.links.map(l => <a key={l} href="#">{l}</a>)}
+        {t.footer.links.map(l => <a key={l.href} href={l.href}>{l.label}</a>)}
       </div>
     </footer>
   );

@@ -6,10 +6,12 @@ export default function Nav({ lang, setLang, t, current = 'home' }) {
       <div className="shell nav-inner">
         <a className="logo" href="/">
           <Logomark />
-          <span>KI Welt</span>
+          <span>Datenflow</span>
         </a>
         <div className="nav-links">
+          <a href="/" className={current === 'home' ? 'current' : ''}>{t.nav.home}</a>
           <a href="/services" className={current === 'services' ? 'current' : ''}>{t.nav.services}</a>
+          <a href="/tools" className={current === 'tools' ? 'current' : ''}>{t.nav.tools}</a>
           <a href="/process" className={current === 'process' ? 'current' : ''}>{t.nav.process}</a>
           <a href="/faq" className={current === 'faq' ? 'current' : ''}>{t.nav.faq}</a>
           <a href="/contact" className={current === 'contact' ? 'current' : ''}>{t.nav.contact}</a>
