@@ -1,4 +1,6 @@
 import { Inter, JetBrains_Mono } from 'next/font/google';
+import { cookies } from 'next/headers';
+import { LangProvider } from '@/components/LangProvider';
 import './globals.css';
 
 const inter = Inter({
@@ -20,10 +22,16 @@ export const metadata = {
   description: 'Datenflow — Custom AI for serious companies.',
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const cookieStore = await cookies();
+  const saved = cookieStore.get('df-lang')?.value;
+  const lang = saved === 'en' ? 'en' : 'de';
+
   return (
-    <html lang="de" data-accent="violet" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body>{children}</body>
+    <html lang={lang} data-accent="violet" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+      <body>
+        <LangProvider initial={lang}>{children}</LangProvider>
+      </body>
     </html>
   );
 }
